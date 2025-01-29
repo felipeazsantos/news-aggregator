@@ -9,9 +9,12 @@ import (
 
 // News structure to store a news
 type News struct {
-	Title  string `json:"title"`
-	URL    string `json:"url"`
-	Source string `json:"source"`
+	Title  string
+	URL    string
+	Source string
+	Slug   string
+	Author string
+	Image  string
 }
 
 // ParseFunc defines the signature of a parse to be able to receive different returns from news APIs
